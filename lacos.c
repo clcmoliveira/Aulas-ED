@@ -35,7 +35,20 @@ void mostra_vetor(int *v, int n){
 	int i;
 	printf("\n");
 	for (i = 0; i < n; i++) {
-		printf("%d", v[i]);
+		printf("%d ", v[i]);
+	}
+}
+
+void bubble(int *v, int n){
+	int i, j, aux;
+	for(i = 1; i < n; i++){
+		for(j = 0; j < n-i; j++){
+			if (v[j] > v[j+1]){
+				aux = v[j];
+				v[j] = v[j+1];
+				v[j+1] = aux;
+			}
+		}
 	}
 }
 
@@ -48,6 +61,8 @@ int main(){
 		printf("Um erro aconteceu \n");
 	srand(time(0));
 	preenche_vetor(v, n);
+	mostra_vetor(v, n);
+	bubble(v, n);
 	mostra_vetor(v, n);
 
 	return 0;
