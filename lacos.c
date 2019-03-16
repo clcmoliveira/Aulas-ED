@@ -39,6 +39,7 @@ void mostra_vetor(int *v, int n){
 	for (i = 0; i < n; i++) {
 		printf("%d ", v[i]);
 	}
+	printf("\n");
 }
 
 void bubble(int *v, int n){
@@ -62,8 +63,10 @@ int main(){
 	if(!v)
 		printf("Um erro aconteceu \n");
 	srand(time(0));
+	printf("Vetor original: ");
 	preenche_vetor(v, n);
 	mostra_vetor(v, n);
+	printf("Vetor ordenado por Bubblesort: ");
 	bubble(v, n);
 	mostra_vetor(v, n);
 
