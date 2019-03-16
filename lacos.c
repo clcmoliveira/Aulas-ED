@@ -55,9 +55,35 @@ void bubble(int *v, int n){
 	}
 }
 
+/*
+	Exemplo de um insertion sort
+		for(i = 1; i < n; i++){
+		chave = v[i];
+		j = i-1;
+		while(j >= 0 && v[j] > chave){
+			v[j+1] = v[j];
+		}
+		v[j+1] = chave;
+	}
+*/
+
+void insertion(int *v, int n){
+	int i, j, chave;
+		for(i = 1; i < n; i++){
+		chave = v[i];
+		j = i-1;
+		while(j >= 0 && v[j] > chave){
+			v[j+1] = v[j];
+			j--;
+		}
+		v[j+1] = chave;
+	}
+}
+
 int main(){
 	int *v, n;
-	printf("Digite o tamanho do vetor: \n");
+	time_t ini_bubble, ini_insert, fim_bubble, fim_insert;
+	printf("Digite o tamanho do vetor: ");
 	scanf("%d", &n);
 	v = (int *) malloc (n * sizeof(int));
 	if(!v)
@@ -66,9 +92,18 @@ int main(){
 	printf("Vetor original: ");
 	preenche_vetor(v, n);
 	mostra_vetor(v, n);
+	ini_bubble = time(0);
+	ini_insert = time(0);
 	printf("Vetor ordenado por Bubblesort: ");
 	bubble(v, n);
 	mostra_vetor(v, n);
-
+	fim_bubble = time(0);
+	printf("Bubble demorou %d segundos.\n", fim_bubble-ini_bubble);
+	insertion(v, n);
+	mostra_vetor(v, n);
+	fim_insert = time(0);
+	printf("Insert demorou %d segundos.\n", fim_insert-ini_insert);
 	return 0;
 }
+
+/*Para o lar: pesquisar o selection sort, implementá-lo e compará-lo com os outros algorítimos elementares*/
