@@ -23,6 +23,22 @@ Spa = (a1 + an)*n/2 => Spa = n(n-1)/2 = n²-n/2
 f(x) = x²
 f'(x) = 2x
 */
+
+void preenche_vetor(int *v, int n){
+	int i;
+	for(i = 0; i < n; i++){
+		v[i] = rand();
+	}
+}
+
+void mostra_vetor(int *v, int n){
+	int i;
+	printf("\n");
+	for (i = 0; i < n; i++) {
+		printf("%d", v[i]);
+	}
+}
+
 int main(){
 	int *v, n;
 	printf("Digite o tamanho do vetor: \n");
@@ -30,6 +46,9 @@ int main(){
 	v = (int *) malloc (n * sizeof(int));
 	if(!v)
 		printf("Um erro aconteceu \n");
+	srand(time(0));
+	preenche_vetor(v, n);
+	mostra_vetor(v, n);
 
 	return 0;
 }
