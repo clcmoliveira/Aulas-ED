@@ -3,15 +3,17 @@
 #include <time.h>
 /*
 Esqueleto de um laço Bubblesort
-for(i = 1; i<N; i++){
-	for(j=0; j<n-1; j++){
-		if(v[j] > v[j+1]){
-			aux = v[j];
-			v[j] = v[j]+1;
-			v[j] = aux;
+	int i, j, aux;
+	for(i = 1; i < n; i++){
+		for(j = 0; j < n-i; j++){
+			if (v[j] > v[j+1]){
+				aux = v[j];
+				v[j] = v[j+1];
+				v[j+1] = aux;
+			}
 		}
-	}	
-}
+	}
+
 
 Considerar um vetor de tamanho n
 Comparação: (n-1) + (n-2) + (n-3) + ... + 3 + 2 + 1
