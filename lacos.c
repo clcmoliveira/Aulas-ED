@@ -80,29 +80,67 @@ void insertion(int *v, int n){
 	}
 }
 
+void selection(int *v, int n){
+	int i, j, min, aux;
+	for(i = 0; i < n-1; i++){
+		min = i;
+		for(j = (j+1); j < n; j++){
+			if(v[j] < v[min])
+				min = j;
+		}
+	}
+	if(v[i] != v[min]){
+		aux = v[i];
+		v[i] = v[min];
+		v[min] = aux;
+	}
+}
+
+
 int main(){
 	int *v, n;
-	time_t ini_bubble, ini_insert, fim_bubble, fim_insert;
+	time_t ini, fim_bubble, fim_insert, fim_select;
 	printf("Digite o tamanho do vetor: ");
 	scanf("%d", &n);
 	v = (int *) malloc (n * sizeof(int));
 	if(!v)
 		printf("Um erro aconteceu \n");
+	
 	srand(time(0));
 	printf("Vetor original: ");
 	preenche_vetor(v, n);
 	mostra_vetor(v, n);
-	ini_bubble = time(0);
-	ini_insert = time(0);
-	printf("Vetor ordenado por Bubblesort: ");
+	
+	ini = time(0);
+	
 	bubble(v, n);
-	mostra_vetor(v, n);
 	fim_bubble = time(0);
-	printf("Bubble demorou %d segundos.\n", fim_bubble-ini_bubble);
-	insertion(v, n);
+	printf("Vetor ordenado por Bubble Sort: ");
 	mostra_vetor(v, n);
+	
+	insertion(v, n);
 	fim_insert = time(0);
-	printf("Insert demorou %d segundos.\n", fim_insert-ini_insert);
+	printf("Vetor ordenado por Inserction: ");
+	mostra_vetor(v, n);
+	
+	selection(v, n);
+	fim_select = time(0);
+	printf("Vetor ordenado por Selection: ");
+	mostra_vetor(v, n);
+	
+	printf("Bubble Sort demorou %d segundos.\n", fim_bubble-ini);
+	printf("Insertion demorou %d segundos.\n", fim_insert-ini);
+	printf("Selection demorou %d segundos.\n", fim_select-ini);
+	
+	if(fim_bubble-ini < fim_insert-ini && fim_bubble-ini < fim_select-ini ){
+		printf("Bubble Sort eh mais rapido");
+	} else if (fim_insert-ini < fim_select-ini){
+		printf("Inserction eh mais rapido");
+	} else {
+		printf("Selection eh mais rapido");
+	}
+	
+	
 	return 0;
 }
 
