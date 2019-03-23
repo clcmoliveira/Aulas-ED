@@ -31,10 +31,12 @@ void mostra_vetor(int *v, int n){
 
 
 //Método de Busca Bubble Sort
-void bubble(int *v, int n){
+void bubble(int *v, int n, int * cont){
 	int i, j, aux;
+	*cont = 0;
 	for(i = 1; i < n; i++){
 		for(j = 0; j < n-i; j++){
+			(*cont)++;
 			if (v[j] > v[j+1]){
 				aux = v[j];
 				v[j] = v[j+1];
@@ -45,11 +47,11 @@ void bubble(int *v, int n){
 }
 
 
-
-
-void insertion(int *v, int n){
+void insertion(int *v, int n, int * cont){
 	int i, j, chave;
-		for(i = 1; i < n; i++){
+	*cont = 0;
+	for(i = 1; i < n; i++){
+		(*cont)++;
 		chave = v[i];
 		j = i-1;
 		while(j >= 0 && v[j] > chave){
@@ -60,9 +62,11 @@ void insertion(int *v, int n){
 	}
 }
 
-void selection(int *v, int n){
+void selection(int *v, int n, int * cont){
 	int i, j, min, aux;
+	*cont = 0;
 	for(i = 0; i < n-1; i++){
+		(*cont)++;
 		min = i;
 		for(j = (j+1); j < n; j++){
 			if(v[j] < v[min])
@@ -111,6 +115,7 @@ int main(){
 	//Parte 1 - Declaracao das variaveis
 	int *v, n, x;
 	int res_busca_bin, res_busca_sim, cont_busca_bin, cont_busca_sim;
+	int cont_bubble, cont_insert, cont_select;
 	time_t ini, fim_bubble, fim_insert, fim_select, fim_busca_bin, fim_busca_sim;
 	
 	//Parte 2 - Pede para o usuario informar o tamanho do vetor
@@ -130,30 +135,30 @@ int main(){
 	ini = time(0);
 	
 	//Bubble
-	bubble(v, n);
+	bubble(v, n, &cont_bubble);
 	fim_bubble = time(0);
 	printf("Vetor ordenado por Bubble Sort: ");
 	mostra_vetor(v, n);
 	
 	//Insert
-	insertion(v, n);
+	insertion(v, n, &cont_insert);
 	fim_insert = time(0);
 	printf("Vetor ordenado por Inserction: ");
 	mostra_vetor(v, n);
 	
 	//Select
-	selection(v, n);
+	selection(v, n, &cont_select);
 	fim_select = time(0);
 	printf("Vetor ordenado por Selection: ");
 	mostra_vetor(v, n);
 	
 	//Compara os tempos e mostra o resultado
 	if(fim_bubble-ini < fim_insert-ini && fim_bubble-ini < fim_select-ini){
-		printf("Bubble Sort eh mais rapido e levou %d segundos.\n", fim_bubble-ini);
+		printf("Bubble Sort eh mais rapido e levou %d segundos.\nNumero de ordenacoes realizadas: %d.\n", fim_bubble-ini, cont_bubble);
 	} else if (fim_insert-ini < fim_select-ini){
-		printf("Inserction eh mais rapido e levou %d segundos.\n", fim_insert-ini);
+		printf("Inserction eh mais rapido e levou %d segundos.\nNumero de ordenacoes realizadas: %d.\n", fim_insert-ini, cont_insert);
 	} else {
-		printf("Selection eh mais rapido e levou %d segundos.\n", fim_select-ini);
+		printf("Selection eh mais rapido e levou %d segundos.\nNumero de ordenacoes realizadas: %d.\n", fim_select-ini, cont_select);
 	}
 	
 	//Inicia a Busca
@@ -180,5 +185,8 @@ int main(){
 /*
 	1. Colocar contadores de iterações nos algoritimos elementares de ordenação
 	2. Executar varias baterias de teste com vetores de tamanhos de 100000 a 1000000 variando de 200000. Pelo menos 1000 testes em cada um.
-	3. Para cada teste, gerar um vetor aleatório e um número aleatorio para a busca.
+	3. Para cada teste, gerar um vetor aleatório e um número aleatorio para a busca
+	4. Faz a busca simples, contando o numero de operações
+	5. Ordena, contando o número de operações.
+	6. Faz a busca binária, contando o numero de operações
 */
