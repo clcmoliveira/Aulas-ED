@@ -179,4 +179,6 @@ int main(){
 }
 /*
 	1. Colocar contadores de iterações nos algoritimos elementares de ordenação
-	2. Executar varias baterias de teste com vetores de tamanhos de 100000 a 1000000 variando de 200000. Pelo menos 1000 testes em cada um*/
+	2. Executar varias baterias de teste com vetores de tamanhos de 100000 a 1000000 variando de 200000. Pelo menos 1000 testes em cada um.
+	3. Para cada teste, gerar um vetor aleatório e um número aleatorio para a busca.
+*/
