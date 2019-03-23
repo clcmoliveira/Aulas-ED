@@ -177,3 +177,6 @@ int main(){
 			printf("Busca Simples foi mais rapida e levou %d segundos para ser realizada.\nO valor de %d foi encontrado na posicao %d\nNumero de comparacoes encontradas: %d", fim_busca_sim-ini, x, res_busca_sim, cont_busca_sim);
 	
 }
+/*
+	1. Colocar contadores de iterações nos algoritimos elementares de ordenação
+	2. Executar varias baterias de teste com vetores de tamanhos de 100000 a 1000000 variando de 200000. Pelo menos 1000 testes em cada um*/
