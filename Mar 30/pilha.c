@@ -42,3 +42,13 @@ int consulta_topo(struct pilha*p){
 	return p->dados[p->topo-1];
 }
 
+void mostra_pilha(struct pilha *p){
+	int i;
+	printf("\n");
+	if(pilha_vazia(p))
+		printf("Pilha Vazia");
+	else
+		for(i = p->topo-1; i>=0; i--)
+			printf("%d ", p->dados[i]);
+	printf("\n");
+}
