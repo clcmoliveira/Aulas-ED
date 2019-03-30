@@ -175,11 +175,11 @@ int main(){
 	}
 	
 	fim_busca_bin = time(0);
-		fim_busca_sim = time(0);
-		if(fim_busca_bin - ini < fim_busca_sim - ini)
-			printf("Busca Binaria foi mais rapida e levou %d segundos para ser realizada.\nO valor de %d foi encontrado na posicao %d\nNumero de comparacoes encontradas: %d", fim_busca_bin-ini, x, res_busca_bin, cont_busca_bin);
-		else
-			printf("Busca Simples foi mais rapida e levou %d segundos para ser realizada.\nO valor de %d foi encontrado na posicao %d\nNumero de comparacoes encontradas: %d", fim_busca_sim-ini, x, res_busca_sim, cont_busca_sim);
+	fim_busca_sim = time(0);
+	if(fim_busca_bin - ini < fim_busca_sim - ini)
+		printf("Busca Binaria foi mais rapida e levou %d segundos para ser realizada.\nO valor de %d foi encontrado na posicao %d\nNumero de comparacoes encontradas: %d", fim_busca_bin-ini, x, res_busca_bin, cont_busca_bin);
+	else
+		printf("Busca Simples foi mais rapida e levou %d segundos para ser realizada.\nO valor de %d foi encontrado na posicao %d\nNumero de comparacoes encontradas: %d", fim_busca_sim-ini, x, res_busca_sim, cont_busca_sim);
 	
 }
 /*
