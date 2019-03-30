@@ -39,6 +39,6 @@ int pop(int *i, struct pilha *p){
 }
 
 int consulta_topo(struct pilha*p){
-	
+	return p->dados[p->topo-1];
 }
 
