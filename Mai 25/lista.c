@@ -37,10 +37,34 @@ int insere_fim(int i, struct lista *l){
 	return 0;
 }
 
-void remove_inicio(int n, struct lista * l){
+int remove_inicio(int *i, struct lista * l){
+	No * aux;
+	if(lista_vazia(l)) return 0;
+	aux = l->prim;
+	*i = aux->info;
+	l->prim = aux->prox; //l->prim->prox;
+	libera_no(&aux);
+	return 1;
 }
 
-void remove_fim(int n, struct lista *l){
+int remove_fim(int *i, struct lista *l){
+	No * aux;
+	if(lista_vazia(l)) return 0;
+	aux = l->prim;
+	if(!aux->prox) {
+		*i = aux->info;
+		l->prim = NULL;
+		libera_no(&aux);
+	}
+	else {
+		while(aux->prox->prox){
+			aux = aux;
+		}
+		*i = aux->prox->info;
+		libera_no(&aux->prox);
+		aux->prox = NULL;
+	}
+	return 1;
 }
 
 void mostra_lista(struct lista *l, char * msg){
@@ -59,7 +83,22 @@ void mostra_lista(struct lista *l, char * msg){
 }
 
 void teste_lista(){
+	int n;
 	struct lista l;
 	inicia_lista(&l);
-	mostra_lista(&l, "Exibindo lista");
+	mostra_lista(&l, "Lista foi inicializada");
+	insere_inicio(10, &l);
+	insere_inicio(20, &l);
+	insere_inicio(30, &l);
+	insere_inicio(40, &l);
+	mostra_lista(&l, "Listas criadas apos a insercao de inicio");
+	insere_inicio(5, &l);
+	insere_inicio(15, &l);
+	insere_inicio(25, &l);
+	insere_inicio(35, &l);
+	mostra_lista(&l, "Listas criadas apos a insercao de fim");
+	if(remove_inicio(&n, &l)){
+		printf("\n%d foi removido do início da lista\n", n);
+		mostra_lista(&l, "Lista apos a remocao de inicio da lista");
+	}
 }
