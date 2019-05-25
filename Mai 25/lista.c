@@ -32,6 +32,7 @@ int insere_fim(int i, struct lista *l){
 			}
 			aux->prox = novo;
 		}
+		return 1;
 	}
 	return 0;
 }
@@ -61,6 +62,4 @@ void teste_lista(){
 	struct lista l;
 	inicia_lista(&l);
 	mostra_lista(&l, "Exibindo lista");
-	
-	
 }
