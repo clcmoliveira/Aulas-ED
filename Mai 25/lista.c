@@ -71,13 +71,13 @@ void mostra_lista(struct lista *l, char * msg){
 	No * aux;
 	printf("\n%s\n", msg);
 	printf("\n");
+	
 	if(lista_vazia(l)) printf("lista vazia");
-	else{
-		aux = l->prim;
-		while(aux){
-			printf("%d ", aux->info);
-			aux = aux->prox;
-		}
+	
+	aux = l->prim;
+	while(aux){
+		printf("%d ", aux->info);
+		aux = aux->prox;
 	}
 	printf("\n");
 }
@@ -99,6 +99,10 @@ void teste_lista(){
 	mostra_lista(&l, "Listas criadas apos a insercao de fim");
 	if(remove_inicio(&n, &l)){
 		printf("\n%d foi removido do início da lista\n", n);
+		mostra_lista(&l, "Lista apos a remocao de inicio da lista");
+	}
+	if(remove_fim(&n, &l)){
+		printf("\n%d foi removido do fim da lista\n", n);
 		mostra_lista(&l, "Lista apos a remocao de inicio da lista");
 	}
 }
