@@ -67,6 +67,16 @@ int remove_fim(int *i, struct lista *l){
 	return 1;
 }
 
+int descobre_inicio(struct lista *l){
+	//if(lista_vazia(l)) return 1;
+	return l->prim;
+}
+int descobre_fim(struct lista *l){
+	//percorre a fila até encontrar a última posição
+	
+}
+
+
 void mostra_lista(struct lista *l, char * msg){
 	No * aux;
 	printf("\n%s\n", msg);

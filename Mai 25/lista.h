@@ -13,4 +13,7 @@ int insere_fim(int, struct lista *);
 int remove_inicio(int *i, struct lista *);
 int remove_fim(int *i, struct lista *);
 
+int descobre_inicio(struct lista *);
+int descobre_fim(struct lista *);
+
 void mostra_lista(struct lista *, char *);
