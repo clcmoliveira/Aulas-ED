@@ -1,4 +1,4 @@
-#include "lista.h"
+#include "lista.c"
 #include <time.h>
 
 int main() {

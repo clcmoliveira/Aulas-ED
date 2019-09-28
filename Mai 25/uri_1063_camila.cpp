@@ -2,7 +2,7 @@
 #include<stack>
  
 int main(){
-  	int n, i, j, temp;
+	int n, i, j, temp;
   	char l[2000], e[1000], s[1000];
   	std::stack<char> p;
  
@@ -31,7 +31,7 @@ int main(){
 	    else
 			printf("Impossible\n");
 	    while (!p.empty()){
-	      p.pop();
+			p.pop();
 	    }
   	}
 	return 0;
