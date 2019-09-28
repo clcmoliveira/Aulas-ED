@@ -15,3 +15,4 @@ int insere(int i, struct meu_vetor *p);
 int insere_dois_elementos(int i, int j, struct meu_vetor *p);
 int remov (int * i, struct meu_vetor *p);
 void vetor_tamanho_n(int t, struct meu_vetor *apont);
+

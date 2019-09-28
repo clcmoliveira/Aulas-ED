@@ -119,3 +119,23 @@ void vetor_tamanho_n(int t, struct meu_vetor *apont){
 int primeiro_elemento(struct meu_vetor * vm){
 	return vm->v[0];
 }
+
+int quantidade(struct *vm){
+	return count(vm->ocupacao != null);
+}
+
+
+int maior_e_pos(struct meu_vetor *vm, int *maior, int *pos){
+	if(esta_vazio(vm)) 
+		return 0;
+	int i;
+	*pos = 0;
+	*maior = vm->v[0];
+	for (i = 0; i < vm->ocupacao; i++){
+		if (vm->v[i] > *maior){
+			*pos = i;
+			*maior = vm->v[i];
+		}
+	}
+	return 1;
+}

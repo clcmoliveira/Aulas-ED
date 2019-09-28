@@ -30,3 +30,9 @@ a. Devolver o 1º elemento que foi inserido
 b. Devolver a quantidade de elementos
 c. Devolver o maior elemento e sua posição.
 d. Devolver no return sucesso(1) ou fracasso(0)
+
+2. Para o lar:
+a. Devolver o último que foi inserido
+b. Devolve a capacidade atual
+c. Criar um vetor de tamanho n que devolve o número de ocorrencias no vetor
+d. Devolver no return sucesso ou fracasso.

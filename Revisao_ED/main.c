@@ -9,7 +9,7 @@ int main(){
 		case 1: 
 			printf("digite o tamanho do vetor\n");
 			scanf("%d", &t);
-			mostra_maior_menor(t, &apont);
+			mostra_maior_menor(t, apont);
 		break;
 		case 2: 
 			printf("Informe o valor de i e j: ");
@@ -30,5 +30,20 @@ int main(){
 			scanf("%d", &t);
 			vetor_tamanho_n(t, apont);
 		break;
+		case 5:
+			printf("digite o tamanho do vetor\n");
+			scanf("%d", %t);
+			cria_vetor(t);
+			primeiro_elemento(apont);
+		break;
+		case 6:
+			printf("digite o tamanho do vetor\n");
+			scanf("%d", %t);
+			cria_vetor(t);
+			quantidade(apont);
+		break;
+		case 7:
+		break;
+		default: break;
 	}
 }
