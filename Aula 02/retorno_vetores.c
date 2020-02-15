@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int * cria_vetor_certo(int t){
-  int *v, i;
+  int *v;
+  int i;
   v = (int *) malloc(t * sizeof(int));
   for(i = 0; i < t; i++){
     v[i] = 2*i;
