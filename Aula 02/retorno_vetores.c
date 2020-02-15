@@ -11,5 +11,9 @@ int * cria_vetor(int t){
 
 int main(){
   int * x = cria_vetor(10);
+  int i;
+  for (i = 0; i < 10; i++){
+    printf("%d\n", x[i]);
+  }
   return 0;
 }
