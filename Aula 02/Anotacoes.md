@@ -13,3 +13,10 @@ Ela pode ser feita por:
 * Referência: A cópia do endereço (da referência) de uma variável
 
 Ver: [parametros.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-parametros-c)
+
+
+---
+Importante
+Os vetores sempre são passador por referência!
+
+Ver: [retorno_vetores.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-retorno_vetores-c)
