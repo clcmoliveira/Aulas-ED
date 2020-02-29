@@ -27,7 +27,14 @@ Toda classe possui atributos e métodos, conforme o seguinte exemplo
 Boas Práticas
 ----
 
-Veja os arquivos da [Aula 01](https://github.com/clcmoliveira/Aulas-ED/tree/master/Aula%2001), pois elas possuem algumas explicações a respeito de atributos e métodos.
+- Veja os arquivos da [Aula 01](https://github.com/clcmoliveira/Aulas-ED/tree/master/Aula%2001), pois elas possuem algumas explicações a respeito de atributos e métodos.
+
+- Em uma **classe modelo** Java, sempre é bom lembrar:
+ - Quais os **Atributos**,
+ - A classe terá **Construtores**?
+ - Os métodos **Get e Set** de cada atributo,
+ - O método **toString()** para possível exibição na tela, e
+ - Quais os **demais métodos** a inserir
 
 ----
 Métodos Get e Set
