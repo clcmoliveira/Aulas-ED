@@ -8,15 +8,17 @@ Vamos separar o desenvolvimento de aplicações que, antes, desenvolvíamos atra
 
 
 ---
-Exemplo de Banco de Dados
+Exemplo de Banco de Dados e Classes
 ---
+
+Exemplo de um Banco de Dados
 
 | id 	| nome 	| ano  	| 
 |----	|------	|------	|
 | 1  	| Ana  	| 2000 	|
 | 2  	| Bia  	| 1999 	|
 
-Toda classe possui atributos e métodos, conforme o seguinte exemplo
+Toda classe possui atributos e métodos, conforme o seguinte exemplo:
 
 | Classe           	| 
 |------------------	|
