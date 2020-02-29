@@ -2,10 +2,10 @@ public class Aluno {
   //Classe de Negócio
   
   //Atributos
-  private int anoNasc;
-  private String nome;
-  private char sexo;
-  private boolean formando;
+  public int anoNasc;
+  public String nome;
+  public char sexo;
+  public boolean formando;
   
   //Métodos
   public int getAnoNasc() { return anoNasc; }
@@ -16,11 +16,11 @@ public class Aluno {
  
   public void setNome(String nome) { this.nome = nome; }
   
-  public int getSexo() { return sexo; }
+  public char getSexo() { return sexo; }
  
   public void setSexo(char sexo) { this.sexo = sexo; }
   
-  public int getFormando() { return formando; }
+  public boolean getFormando() { return formando; }
  
   public void setFormando(boolean formando) { this.formando = formando; }
   
