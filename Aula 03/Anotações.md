@@ -2,7 +2,10 @@
 
 Vamos separar o desenvolvimento de aplicações que, antes, desenvolvíamos através do método main. Isso se chama modularização, que permite em separar cada funcionalidade para depois poder construir o código.
 
+
 | <img src="https://github.com/clcmoliveira/Aulas-ED/blob/master/Estruturas.png?raw=true"> 	| <img src="https://github.com/clcmoliveira/Aulas-ED/blob/master/modeloOO.png?raw=true"> 	|
+|------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------	|
+
 
 ---
 Exemplo de Banco de Dados
