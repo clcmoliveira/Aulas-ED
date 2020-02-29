@@ -7,6 +7,14 @@ public class Aluno {
   private char sexo;
   private boolean formando;
   
+  //Construtor
+  public Aluno(int anoNasc, String nome, char sexo, boolean formando){
+    setAnoNasc(anoNasc);
+    setNome(nome);
+    setSexo(sexo);
+    setFormando(formando);
+  }
+  
   //Métodos
   public int getAnoNasc() { return anoNasc; }
  
