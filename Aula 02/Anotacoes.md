@@ -18,6 +18,6 @@ Ver: [parametros.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcd
 ---
 Importante
 ---
-Os vetores sempre são passador por referência!
+Os vetores sempre são passados por referência!
 
 Ver: [retorno_vetores.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-retorno_vetores-c)
