@@ -7,16 +7,17 @@ Observe a estrutura abaixo:
 Ver: [vetor.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-vetor-c) 
 
 ---
-## Passagem de Parâmetros
+Passagem de Parâmetros
+---
 Ela pode ser feita por:
 * Valor: A cópia do valor de uma variável, ou de uma referência
 * Referência: A cópia do endereço (da referência) de uma variável
 
 Ver: [parametros.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-parametros-c)
 
-
 ---
 Importante
+---
 Os vetores sempre são passador por referência!
 
 Ver: [retorno_vetores.c](https://gist.github.com/clcmoliveira/b96ab9ab7c0b0932dd0ebcdbfcbf7526#file-retorno_vetores-c)
