@@ -9,7 +9,7 @@ alunos: Camila, Gustavo e Wallison
 ## Sumário
 - **Aula 1**
   - [Introdução a Programação em Java](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2001/Anotacoes.md#introdução-a-programação-em-java)
-- **Aula 2 - Em Linguágem C**
+- **Aula 2 - *em Linguágem C***
   - [Uso de Memória](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#uso-da-memória)
   - [Passagem de Parâmetros](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#passagem-de-parâmetros)
   - [Importante](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#importante)
