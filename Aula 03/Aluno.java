@@ -15,6 +15,10 @@ public class Aluno {
     setFormando(formando);
   }
   
+  public Aluno(){
+    setNome("Nooooo");
+  }
+  
   //Métodos
   public int getAnoNasc() { return anoNasc; }
  
