@@ -25,12 +25,14 @@ Toda classe possui atributos e métodos, conforme o seguinte exemplo
 
 ----
 Boas Práticas
+----
 
 Veja os arquivos da [Aula 01](https://github.com/clcmoliveira/Aulas-ED/tree/master/Aula%2001), pois elas possuem algumas explicações a respeito de atributos e métodos.
 
 ----
 Métodos Get e Set
+----
 
-São métodos as quais consultamos (Get) e modificamos (Set) os valores que atribuimos aos atributos da classe. Desta forma, não precisamos transformar nossos atributos da classe, diretamente, em públicos, uma vez que estamos as encapsulando.
+São métodos as quais consultamos (**Get**) e modificamos (**Set**) os valores que atribuimos aos atributos da classe. Desta forma, não precisamos transformar nossos atributos da classe, diretamente, em públicos, uma vez que estamos as encapsulando.
 
 [Exemplo - DevMedia](https://www.devmedia.com.br/get-e-set-metodos-acessores-em-java/29241)
