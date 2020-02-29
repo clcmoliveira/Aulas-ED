@@ -21,3 +21,9 @@ Toda classe possui atributos e métodos, conforme o seguinte exemplo
 |------------------	|
 | - Att1<br>- Att2 	| 
 | - Met1<br>- Met2 	| 
+
+
+----
+Boas Práticas
+
+Veja os arquivos da [Aula 01](https://github.com/clcmoliveira/Aulas-ED/tree/master/Aula%2001), pois elas possuem algumas explicações a respeito de atributos e métodos.
