@@ -1,20 +1,17 @@
 ---
-layout: page
-title: Aprender
-nav-menu: true
+title: Aulas de Estrutura de Dados
+ano: 2020
+semestre: 1
+professora: Machion
+alunos: Camila, Gustavo e Wallison
 ---
 
-<!-- Main -->
-<div id="main" class="alt">
-	<!-- One -->
-	<section id="one">
-		<div class="inner">
-			<header class="major">
-				<h1>Aulas de Estrutura de Dados</h1>
-			</header>
-			<p>Ano: 2020</p>
-      <p>Semestre: 1</p>
-      <p>Professora: Machion</p>
-      <p>Alunos: Camila, Gustavo e Wallison</p>
-		</div>
-	</section>
+## Sumário
+- [Introdução a Programação em Java](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2001/Anotacoes.md#introdução-a-programação-em-java)
+- [Uso de Memória](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#uso-da-memória)
+- [Passagem de Parâmetros](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#passagem-de-parâmetros)
+- [Importante - Aula 2](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2002/Anotacoes.md#importante)
+- [Conceitos de Orientação a Objetos](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2003/Anota%C3%A7%C3%B5es.md#conceitos-de-orientação-a-objetos)
+- [Exemplo de Banco de Dados e Classes](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2003/Anota%C3%A7%C3%B5es.md#exemplo-de-banco-de-dados)
+- [Boas Práticas - Aula 3](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2003/Anota%C3%A7%C3%B5es.md#boas-práticas)
+- [Métodos Get e Set](https://github.com/clcmoliveira/Aulas-ED/blob/master/Aula%2003/Anota%C3%A7%C3%B5es.md#métodos-get-e-set)
