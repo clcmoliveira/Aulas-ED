@@ -10,7 +10,12 @@ public class TesteAluno {
     aluno1 = new Aluno();
     aluno2 = new Aluno();
     
-    aluno1.anoNasc = 2000;
-    aluno2.anoNasc = 1999;
+    //setAnoNasc - Chamar método de encapsulamento
+    aluno1.setAnoNasc(2000);
+    aluno2.setAnoNasc(1999);
+    
+    
+    System.out.println("Ano de nascimento: " + aluno1.anoNasc);
+    System.out.println("Ano de nascimento: " + aluno2.anoNasc);
   }
 }
