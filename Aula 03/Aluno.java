@@ -2,10 +2,10 @@ public class Aluno {
   //Classe de Negócio
   
   //Atributos
-  public int anoNasc;
-  public String nome;
-  public char sexo;
-  public boolean formando;
+  private int anoNasc;
+  private String nome;
+  private char sexo;
+  private boolean formando;
   
   //Métodos
   public int getAnoNasc() { return anoNasc; }
