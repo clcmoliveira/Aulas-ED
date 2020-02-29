@@ -15,7 +15,7 @@ public class TesteAluno {
     aluno2.setAnoNasc(1999);
     
     
-    System.out.println("Ano de nascimento: " + aluno1.anoNasc);
-    System.out.println("Ano de nascimento: " + aluno2.anoNasc);
+    System.out.println("Ano de nascimento: " + aluno1.getAnoNasc());
+    System.out.println("Ano de nascimento: " + aluno2.getAnoNasc());
   }
 }
