@@ -49,8 +49,9 @@ public class Calculadora {
                     showMessageDialog(null, "Opcao invalida");
                     break;
             }
-
+            opcao = menu();
         }
+        showMessageDialog(null, "Obrigada, volte sempre =)");
     }
 
     private static int div(int num1, int num2) {
