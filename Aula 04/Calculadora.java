@@ -8,14 +8,16 @@ public class Calculadora {
 
     static char menu() {
 //        o método está associado a classe, pq ele é estático
-        String auxiliar;
-        auxiliar = showInputDialog("Digite sua opcao:" +
-                "\n+ = soma" +
-                "\n- = subtracao" +
-                "\n* = multiplicacao" +
-                "\n/ = divisao" +
-                "\ns = sair");
-        return auxiliar.charAt(0);
+        char op;
+        do {
+            op = showInputDialog("Digite sua opcao:" +
+                    "\n+ = soma" +
+                    "\n- = subtracao" +
+                    "\n* = multiplicacao" +
+                    "\n/ = divisao" +
+                    "\ns = sair").charAt(0);
+        } while (op != '+' && op != '-' && op != '*' && op != '/' && op != 's' && op != 'S');
+        return op;
     }
 
     public static void main(String[] args) {
