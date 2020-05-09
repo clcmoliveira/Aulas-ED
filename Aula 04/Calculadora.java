@@ -24,10 +24,10 @@ public class Calculadora {
         char opcao = menu();
         int res;
         while (opcao != 's' && opcao != 'S') {
-            String auxiliar = showInputDialog("Digite o primeiro valor: ");
-            int num1 = parseInt(auxiliar);
-            auxiliar = showInputDialog("Digite o segundo valor: ");
-            int num2 = parseInt(auxiliar);
+//            Leitura
+            int num1 = parseInt(showInputDialog("Digite o primeiro valor: "));
+            int num2 = parseInt(showInputDialog("Digite o segundo valor: "));
+//            Processamento
             switch (opcao) {
                 case '+':
                     res = soma(num1, num2);
