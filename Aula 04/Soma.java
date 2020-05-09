@@ -3,7 +3,7 @@ public class Soma {
         int soma =0;
         for (int i=0; i<args.length; i++){
             soma+= Integer.parseInt(args[i]);
-            System.out.println(soma);
         }
+        System.out.println(soma);
     }
 }
