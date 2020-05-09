@@ -49,6 +49,7 @@ public class Calculadora {
                     showMessageDialog(null, "Opcao invalida");
                     break;
             }
+//            Fim da operacao e retorno ao menu
             opcao = menu();
         }
         showMessageDialog(null, "Obrigada, volte sempre =)");
