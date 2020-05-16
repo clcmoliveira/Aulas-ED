@@ -1,4 +1,5 @@
-import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.showInputDialog;
+import static javax.swing.JOptionPane.showMessageDialog;
 
 public class TesteLivroDeNotas{
     public static void main(String[] args) {
