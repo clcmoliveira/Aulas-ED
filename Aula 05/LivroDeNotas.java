@@ -1,7 +1,7 @@
 //O livro de notas deve armazenar o nome de um curso e uma lista de alunos que frequentam o curso
 public class LivroDeNotas {
-	
-    private static int contador;
+
+    //private static int contador;
     private String nomeDoCurso;
 
     // utilizando o construtor padrão
