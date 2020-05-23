@@ -3,4 +3,9 @@ public class Ordenacao{
 	public Ordenacao(int [] t){
 		v = new int[t];
 	}
+
+	public void preencheVetor(){
+		//valores randomicos
+		
+	}
 }
