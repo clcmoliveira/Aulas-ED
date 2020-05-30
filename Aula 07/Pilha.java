@@ -2,7 +2,7 @@ public class Pilha {
 
     private final int topo;
     private final int[] dados;
-    
+
     public Pilha(int capacidade){
         dados = new int[capacidade];
         topo = 0;
@@ -15,5 +15,9 @@ public class Pilha {
 
     public boolean pilhaVazia(){
         return topo == 0;
+    }
+    
+    public boolean pilhaCheia(){
+        return topo == dados.length;
     }
 }
