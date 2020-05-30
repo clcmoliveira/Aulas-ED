@@ -1,7 +1,3 @@
-package view;
-
-import modelo.Aluno;
-
 import static java.lang.Boolean.parseBoolean;
 import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
@@ -22,28 +18,30 @@ public class TesteAluno {
         aluno = new Aluno(nomeAluno, idadeAluno, pesoAluno, sexoAluno, formadoAluno);
 
         showMessageDialog(null,
-                "aluno.Aluno:" + nomeAluno + "\n" +
-                        "Idade:" + idadeAluno + "\n" +
-                        "Peso:" + pesoAluno + "\n" +
-                        "Sexo:" + sexoAluno + "\n" +
-                        "Formado?:" + formadoAluno
+                "Aluno:" + aluno.getNome() + "\n" +
+                        "Idade:" + aluno.getIdade() + "\n" +
+                        "Peso:" + aluno.getPeso() + "\n" +
+                        "Sexo:" + aluno.getSexo() + "\n" +
+                        "Formado?:" + aluno.isFormando()
         );
 
-        String nomeAlunoM = showInputDialog("O nome do aluno é: " + nomeAluno);
-        int idadeAlunoM = parseInt(showInputDialog("A idade do aluno é: " + idadeAluno));
-        double pesoAlunoM = parseDouble(showInputDialog("O peso do aluno é: " + pesoAluno));
-        char sexoAlunoM = showInputDialog("O sexo do aluno é: "  + sexoAluno).charAt(0);
-        boolean formadoAlunoM = parseBoolean(String.valueOf(showInputDialog("O aluno é formado?" + formadoAluno).charAt(0)));
-
-
-        aluno = new Aluno (nomeAlunoM, idadeAlunoM, pesoAlunoM, sexoAlunoM, formadoAlunoM);
+        aluno.setNome(showInputDialog("O nome do aluno é: " + nomeAluno));
+        aluno.setIdade(parseInt(showInputDialog("A idade do aluno é: " + idadeAluno)));
+        aluno.setPeso(parseDouble(showInputDialog("O peso do aluno é: " + pesoAluno)));
+        aluno.setSexo(showInputDialog("O sexo do aluno é: "  + sexoAluno).charAt(0));
+        aluno.setFormando(parseBoolean(String.valueOf(
+                showInputDialog("O aluno é formado?" + formadoAluno).charAt(0)))
+        );
+        
+        new Aluno(aluno.getNome(), aluno.getIdade(), aluno.getPeso(),
+                aluno.getSexo(), aluno.isFormando());
 
         showMessageDialog(null,
-                "aluno.Aluno:" + nomeAlunoM + "\n" +
-                        "Idade:" + idadeAlunoM + "\n" +
-                        "Peso:" + pesoAlunoM + "\n" +
-                        "Sexo:" + sexoAlunoM + "\n" +
-                        "Formado?:" + formadoAlunoM
+                "Aluno:" + aluno.getNome() + "\n" +
+                        "Idade:" + aluno.getIdade() + "\n" +
+                        "Peso:" + aluno.getPeso() + "\n" +
+                        "Sexo:" + aluno.getSexo() + "\n" +
+                        "Formado?:" + aluno.isFormando()
         );
     }
 }
