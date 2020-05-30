@@ -1,6 +1,6 @@
 public class Pilha {
 
-    private final int topo;
+    private int topo;
     private final int[] dados;
 
     public Pilha(int capacidade){
@@ -16,8 +16,17 @@ public class Pilha {
     public boolean pilhaVazia(){
         return topo == 0;
     }
-    
+
     public boolean pilhaCheia(){
         return topo == dados.length;
+    }
+
+    public void push(int elemento){
+        dados[topo] = elemento;
+        topo++;
+    }
+
+    public int pop(){
+        return dados[topo-1];
     }
 }
