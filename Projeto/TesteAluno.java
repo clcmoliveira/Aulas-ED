@@ -13,7 +13,7 @@ public class TesteAluno {
         double pesoAluno = parseDouble(showInputDialog("Informe o peso do aluno: "));
         char sexoAluno = showInputDialog("Informe o sexo do aluno: ").charAt(0);
         boolean formadoAluno = parseBoolean(String.valueOf(showInputDialog("Informe se o aluno é formado \n" +
-                "T para formado ou F para não formado)").charAt(0)));
+                "True para formado ou False para não formado)")));
         
         aluno = new Aluno(nomeAluno, idadeAluno, pesoAluno, sexoAluno, formadoAluno);
 
@@ -32,7 +32,7 @@ public class TesteAluno {
         aluno.setFormando(parseBoolean(String.valueOf(
                 showInputDialog("O aluno é formado?" + formadoAluno).charAt(0)))
         );
-        
+
         new Aluno(aluno.getNome(), aluno.getIdade(), aluno.getPeso(),
                 aluno.getSexo(), aluno.isFormando());
 
