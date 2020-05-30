@@ -22,11 +22,10 @@ public class Pilha {
     }
 
     public void push(int elemento){
-        dados[topo] = elemento;
-        topo++;
+        dados[topo++] = elemento;
     }
 
     public int pop(){
-        return dados[topo-1];
+        return dados[--topo];
     }
 }
